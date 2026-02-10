@@ -1,0 +1,31 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.home-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.destinations-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destination-card {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .destinations-grid,
+  .contact-container,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
