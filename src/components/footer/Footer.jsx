@@ -18,10 +18,7 @@ function Footer() {
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
             <li>
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="">
+              <a href="https://github.com/celesteag/travel-web" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </li>
@@ -34,11 +31,9 @@ function Footer() {
             <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-
             <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
@@ -48,7 +43,10 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2023 TravelWeb. All rights reserved. Privacy Policy | Cookies | Terms
+        © 2026 TravelWeb. All rights reserved.<br />
+        <a href="/privacy">Privacy Policy</a> |
+        <a href="/cookies"> Cookies Policy</a> |
+        <a href="/terms"> Terms & Conditions</a>
       </div>
     </footer>
   )

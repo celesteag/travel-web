@@ -5,6 +5,10 @@
   line-height: 1.6;
 }
 
+p {
+  text-align: center;
+}
+
 .about h1 {
   text-align: center;
   margin-bottom: 32px;
@@ -28,7 +32,7 @@
 
 .value-card {
   background: #ffffff;
-  color: #0b3c5d;      
+  color: #0b3c5d;
   padding: 24px;
   border-radius: 12px;
   width: 260px;
@@ -40,4 +44,3 @@
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(11, 60, 93, 0.15);
 }
-

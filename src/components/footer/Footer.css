@@ -1,5 +1,5 @@
 .footer {
-  background-color: #0b3c5d;
+  background-color: #1e5373;
   color: #ffffff;
   padding: 40px 16px 16px;
   margin-top: 64px;
@@ -8,7 +8,6 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -17,6 +16,8 @@
 
 .footer-section {
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer-section h4 {
@@ -39,6 +40,16 @@
 }
 
 .footer-section a:hover {
+  color: #ffb703;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover {
   color: #ffb703;
 }
 

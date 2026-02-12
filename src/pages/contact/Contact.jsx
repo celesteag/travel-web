@@ -5,6 +5,8 @@ import { MdEmail } from "react-icons/md";
 import './Contact.css'
 
 function Contact() {
+  const position = [40.4200, -3.7068]
+
   return (
     <main className="contact">
       <h1>Contact Us</h1>
@@ -21,7 +23,7 @@ function Contact() {
       <section className="contact-info">
         <div className="info-cards">
           <div className="info-card">
-            <a href="https://maps.google.com/?q=123+Creative+Street,Madrid,Spain" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <a href="https://maps.google.com/?q=28+Gran+Vía,Madrid,Spain" target="_blank" rel="noopener noreferrer" className="icon-link">
               <FaMapMarkerAlt className="icon" />
             </a>
             <h3>Our Location</h3>
@@ -44,6 +46,27 @@ function Contact() {
             <p>+34 600 123 456</p>
           </div>
         </div>
+      </section>
+
+      <section className="contact-map">
+        <h2>Find Us Here</h2>
+        <MapContainer 
+          center={position} 
+          zoom={15} 
+          scrollWheelZoom={false}
+          style={{ height: '400px', width: '100%' }}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
+            <Popup>
+              <strong>TravelWeb Office</strong><br />
+              28 Gran Vía<br />
+              Madrid, Spain
+            </Popup>
+          </Marker>
+        </MapContainer>
       </section>
     </main>
   )
