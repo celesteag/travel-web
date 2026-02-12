@@ -1,16 +1,158 @@
-# React + Vite
+# 🌍 TravelWeb
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive travel website built with React and Vite. Browse destinations, learn about us, and get in touch.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## React Compiler
+### Prerequisites
+- Node.js (v16+)
+- npm
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
+```bash
+git clone https://github.com/yourusername/travelweb.git
+cd travelweb
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open `http://localhost:5173`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+```
+travelweb/
+├── src/
+│   ├── components/
+│   │   ├── header/
+│   │   ├── footer/
+│   │   └── destination-card/
+│   ├── pages/
+│   │   ├── home/
+│   │   ├── about/
+│   │   └── contact/
+│   ├── data/
+│   │   └── destinations.js
+│   ├── styles/
+│   │   └── global.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+└── README.md
+```
+
+---
+
+## 🎨 Main Features
+
+### Home Page
+Grid of 12 travel destinations with images from Unsplash. Fully responsive with flexbox.
+
+### About Page
+Info about TravelWeb's mission and what we offer.
+
+### Contact Page
+- Contact form
+- Interactive Leaflet map
+- Contact cards with Google Maps, email, and WhatsApp links
+
+---
+
+## 🛠️ Third-Party Components
+
+### Leaflet
+Used for the interactive map on the contact page.
+- [React Leaflet Docs](https://react-leaflet.js.org/)
+- [Leaflet Quick Start](https://leafletjs.com/examples/quick-start/)
+
+### React Icons
+Icons for social media, location, email, and phone.
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## 📚 Resources That Helped
+
+1. **React Docs** - [https://react.dev/](https://react.dev/) - Component structure and hooks.
+
+2. **Vite Guide** - [https://vitejs.dev/guide/](https://vitejs.dev/guide/) - Project setup and dev server.
+
+3. **React Router** - [https://reactrouter.com/](https://reactrouter.com/) - Navigation between pages.
+
+4. **CSS Flexbox** - [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Responsive layouts.
+
+5. **Unsplash** - [https://unsplash.com/](https://unsplash.com/) - Free images.
+
+6. **README Template** - [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template) - Base structure for this file.
+
+---
+
+## 💻 Git Workflow
+
+**Branches:**
+- `main` - Production
+- `develop` - Development
+```bash
+git checkout develop
+git add .
+git commit -m "your message"
+git push origin develop
+```
+
+---
+
+## 📱 Responsive Design
+
+Mobile-first with media queries:
+```css
+/* Mobile (default) */
+
+/* Tablet */
+@media (min-width: 768px) { ... }
+
+/* Desktop */
+@media (min-width: 1024px) { ... }
+```
+
+---
+
+## 📝 Design Inspiration
+
+Based on modern travel sites and Figma community templates.
+
+---
+
+## 👤 Author
+
+**Your Name**
+
+- GitHub: [@celesteag](https://github.com/celesteag)
+- Email: celeste.ag.2c@gmail.com
+
+---
+
+## Thanks To
+
+- React Icons - Icon library
+- Leaflet - Maps
+- CSS-Tricks - Guides
+- MDN Web Docs - Documentation
+
+---
+
+## License
+
+Educational project - free to use.
+
+---
+
+## Contact
+
+- info@devwebsolutions.com
+- +34 600 123 456
+- Calle Gran Vía 28, Madrid
+
+

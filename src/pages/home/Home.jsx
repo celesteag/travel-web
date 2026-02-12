@@ -7,7 +7,7 @@ function Home() {
     <main className="home">
       <h1 className="home-title">Popular Destinations</h1>
 
-      <section className="destinations-grid">
+      <section className="destinations">
         {destinations.map((destination) => (
           <DestinationCard
             key={destination.id}

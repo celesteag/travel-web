@@ -1,4 +1,6 @@
-import './Footer.css'
+import './Footer.css';
+import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
+
 
 function Footer() {
   return (
@@ -19,7 +21,7 @@ function Footer() {
               <a
                 href="https://github.com/"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="">
                 GitHub
               </a>
             </li>
@@ -29,11 +31,20 @@ function Footer() {
         <div className="footer-section">
           <h4>Follow us</h4>
           <div className="footer-social">
-            <span>🌍</span>
-            <span>📸</span>
-            <span>🐦</span>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF />
+            </a>
+
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
           </div>
         </div>
+
       </div>
 
       <div className="footer-bottom">
